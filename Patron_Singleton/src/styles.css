@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  background-color: #1E2027;
+}
+h1 {
+  color: white;
+}
+button {
+  padding: 1em;
+  margin: 10px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #2E3037;
+  font-family: "Aveenir";
+  font-size: 1em;
+  font-weight: bolder;
+}
+#rojo {
+  background: -webkit-linear-gradient(to right, #EF473A,#CB2D3E);
+  background: linear-gradient(to right, #EF473A,#CB2D3E);
+}
+#blue {
+    background: -webkit-linear-gradient(to right, #00C6FF,#0072FF);
+  background: linear-gradient(to right,  #00C6FF,#0072FF);
+}
+#green {
+  background: -webkit-linear-gradient(to right, #00E676,#00C853);
+  background: linear-gradient(to right, #00E676,#00C853);
+}
