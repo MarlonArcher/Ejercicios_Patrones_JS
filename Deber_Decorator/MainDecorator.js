@@ -1,0 +1,11 @@
+import {PagosDecorator, SegurosDecorator} from './decorator/Decorations.js';
+import {CuentaAhorro,CuentaCorriente} from './impl/Cuentas.js';
+const cuentaAhorro = new CuentaAhorro(1, "William Perez", 25);
+cuentaAhorro.abrirCuenta(); 
+const cuentaAhorroPagos = new PagosDecorator(cuentaAhorro);
+cuentaAhorroPagos.abrirCuenta();
+console.log("************************************************************************************");
+const cuentaCorriente = new CuentaCorriente(2, "Marlon Masabanda", 25);
+cuentaCorriente.abrirCuenta();
+const cuentaCorrienteSeguros = new SegurosDecorator(new PagosDecorator(cuentaCorriente));
+cuentaCorrienteSeguros.abrirCuenta();
